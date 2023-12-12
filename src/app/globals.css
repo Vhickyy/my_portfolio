@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* border-radius: 50px;
+background: #d3d2da;
+box-shadow:  20px 20px 60px #b3b3b9,
+             -20px -20px 60px #f3f2fb; */
+
+             /* border-radius: 50px;
+background: #1d1a39;
+box-shadow:  15px 15px 30px #141228,
+             -15px -15px 30px #26224a; */
+:root {
+  --backgroundColor: #d3d2da;
+  --shadow: 3px 3px 7px #9e9ea4,
+  -3px -3px 5px #ffffff;
+  /* --backgroundColor: #1d1a39;
+  --shadow: 3px 3px 7px #16142b,
+  -3px -3px 5px #242147; */
+}
+
+.dark{
+  --backgroundColor: #1d1a39;
+  --shadow: 3px 3px 7px #16142b,
+  -3px -3px 5px #242147;
+}
+
+.shadow{
+  box-shadow: var(--shadow);
+}
+.border-rotate{
+  /* height: 5rem;
+  width: 5rem; */
+  /* border: .3rem solid blueviolet; */
+  border-radius: 50%;
+  padding: 2rem;
+  border-top: .3rem solid pink;
+  border-inline: .3rem solid transparent;
+  border-bottom: .3rem solid #ffc0cb;
+  /* background-color: pink; */
+  z-index: 1;
+}
+
+.inset-shadow{
+  box-shadow: inset 3px 3px 7px #9e9ea4,
+  inset -3px -3px 5px #ffffff;
+  /* box-shadow: inset 3px 3px 7px #16142b,
+  inset -3px -3px 5px #242147; */
+}
+
+.sticky-cl{
+  /* position: sticky;
+  top: 0; */
+  /* background-color: brown; */
+  top: -500px;
+}
