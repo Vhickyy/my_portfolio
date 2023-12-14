@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <PortfolioContextProvider>
-        <body className={`${inter.className} bg-bgColor`}>{children}</body>
+        <body className={`${inter.className} bg-bgColor max-w-[1400px] mx-auto`}>{children}</body>
       </PortfolioContextProvider>
     </html>
   )

@@ -35,16 +35,16 @@ const Header = () => {
     const toggleMobileMenu = () => {
         setMobileMenu(pre=>!pre)
     }
-    const links = navLinks.map((link,index)=>{
-        return (
-            <button className='border border-gray-500 p-2 rounded-md' key={index}>
-                <FaHome />
-            </button>
-        )})
+    // const links = navLinks.map((link,index)=>{
+    //     return (
+    //         <button className='border border-gray-500 p-2 rounded-md' key={index}>
+    //             <FaHome />
+    //         </button>
+    //     )})
 
   return (
     <header className=' z-[2] bg-bgColor sticky top-0' ref={headerRef}>
-        <nav className='flex justify-between items-center py-6  max-w-[1440px] w-[90%] xl:w-[85%] mx-auto'>
+        <nav className='flex justify-between items-center py-6  w-[90%] mx-auto'>
             {/* logo */}
             <div className={`shadow bg-bgColor  grid items-center rounded-md  w-[30%] max-w-[10rem] text-center`}>
                 <div className='border border-gray-500 py-2 px-4 rounded-md '>
@@ -53,9 +53,9 @@ const Header = () => {
             </div>
             {/* desktop nav */}
             <div className={`shadow bg-bgColor hidden md:flex items-center rounded-md gap-6 py-2 px-8 `}>
-                {navLinks.map((link,index)=>{
+                {navLinks.map((_link,index)=>{
                     return (
-                        <button className='border border-gray-500 p-2 rounded-md' key={index}>
+                        <button key={index} className='border border-gray-500 p-2 rounded-md' >
                             <FaHome />
                         </button>
                 )})}
@@ -67,10 +67,10 @@ const Header = () => {
                     <button className='border border-gray-500 p-2 rounded-md '>
                         <div className='h-6 w-6 bg-red-400 rounded-full'></div>
                     </button>
-                    <div className={`absolute top-[100%] -left-1/2 -translate-x-[52%] px-2 shadow flex gap-2 mt-3 bg-bgColor h-0 overflow-hidden transition-all duration-1000 ${mobileMenu ? "h-[3rem] " : ""}`}>
+                    <div className={`absolute top-[100%] -left-1/2 -translate-x-[52%] px-2 shadow flex gap-2 mt-3 bg-bgColor h-0 overflow-hidden transition-all duration-500 ${mobileMenu ? "h-[3rem] " : ""}`}>
                         {navLinks.map((link,index)=>{
                             return (
-                                <button className=' p-2 rounded-md' key={index}>
+                                <button key={index} className=' p-2 rounded-md' >
                                     <FaHome className="h-6 w-6"/>
                                 </button>
                         )})}
@@ -87,7 +87,7 @@ const Header = () => {
                     <button className='border border-gray-500 p-2 rounded-md' onClick={()=>toggleColor()}>
                         <div className='h-6 w-6 rounded-full' style={{backgroundColor: colors[color].color}}></div>
                     </button>
-                    <div className={`absolute top-[100%] left-1/2 -translate-x-1/2 rounded-md shadow grid gap-2 mt-3 bg-bgColor  transition-all duration-1000 px-2 overflow-hidden h-0 ${showColor ? "h-[11rem] py-2" : ""}`}> 
+                    <div className={`absolute top-[100%] left-1/2 -translate-x-1/2 rounded-md shadow grid gap-2 mt-3 bg-bgColor  transition-all duration-500 px-2 overflow-hidden h-0 ${showColor ? "h-[11rem] py-2" : ""}`}> 
                         {colors.map((c,index)=>{
                             return (
                                 <button key={index} style={{backgroundColor: c.color}} className={`h-6 w-6 rounded-full`} onClick={()=>toggleColor(index)}></button>
