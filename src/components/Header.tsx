@@ -9,10 +9,10 @@ const Header = () => {
     const headerRef = useRef<HTMLHeadElement>(null);
     const [mobileMenu,setMobileMenu] = useState(false);
     const {color,toggleColor,showColor} = usePortfolioContext();
-    let position = 0;
+    const [position,setPosition] = useState(0)
 
     const scroll = () => {
-        const scrolling = window.pageYOffset ;
+        const scrolling = window.pageYOffset;
         if(headerRef.current){
             if(scrolling > position){
                 headerRef.current.classList.add("sticky-cl");
@@ -23,14 +23,15 @@ const Header = () => {
             if(position <= 20){
                 headerRef.current.style.boxShadow = "none";
             }
-            position = scrolling;
+            setPosition(scrolling)
         }
     }
+    
 
     useEffect(()=>{
         window.addEventListener("scroll",scroll)
         return () => window.removeEventListener("scroll",scroll)
-    },[])
+    },[position])
 
     const toggleMobileMenu = () => {
         setMobileMenu(pre=>!pre)
@@ -52,18 +53,18 @@ const Header = () => {
                 </div>
             </div>
             {/* desktop nav */}
-            <div className={`shadow bg-bgColor hidden md:flex items-center rounded-md gap-6 py-2 px-8 `}>
+            <section className={`shadow bg-bgColor hidden md:flex items-center rounded-md gap-6 py-2 px-8 `}>
                 {navLinks.map((_link,index)=>{
                     return (
                         <button key={index} className='border border-gray-500 p-2 rounded-md' >
                             <FaHome />
                         </button>
                 )})}
-            </div>
+            </section>
             {/* third flex item */}
-            <div className='flex gap-4'>
+            <section className='flex gap-4'>
                 {/* mobile nav */}
-                <div className={` shadow bg-bgColor  grid items-center rounded-md relative md:hidden`} onClick={toggleMobileMenu}>
+                <aside className={` shadow bg-bgColor  grid items-center rounded-md relative md:hidden`} onClick={toggleMobileMenu}>
                     <button className='border border-gray-500 p-2 rounded-md '>
                         <div className='h-6 w-6 bg-red-400 rounded-full'></div>
                     </button>
@@ -75,15 +76,15 @@ const Header = () => {
                                 </button>
                         )})}
                     </div>
-                </div>
+                </aside>
                 {/* theme */}
-                <div className={` shadow bg-bgColor  grid items-center rounded-md`}>
+                <figure className={` shadow bg-bgColor  grid items-center rounded-md`}>
                     <button className='border border-gray-500 px-2 p-2 rounded-md'>
                         <BsSunFill className="w-6 h-6"/>
                     </button>
-                </div>
+                </figure>
                 {/* color picker */}
-                <div className={` shadow bg-bgColor grid items-center rounded-md bg-blue-300 relative`}>
+                <aside className={` shadow bg-bgColor grid items-center rounded-md bg-blue-300 relative`}>
                     <button className='border border-gray-500 p-2 rounded-md' onClick={()=>toggleColor()}>
                         <div className='h-6 w-6 rounded-full' style={{backgroundColor: colors[color].color}}></div>
                     </button>
@@ -94,8 +95,8 @@ const Header = () => {
                             )
                         })}
                     </div>
-                </div>
-            </div>
+                </aside>
+            </section>
         </nav>
     </header>
   )

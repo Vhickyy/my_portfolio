@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         "bgColor": "var(--backgroundColor)",
+        "textColor": "var(--textColor)",
       }
     },
   },

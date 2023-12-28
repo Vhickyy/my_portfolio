@@ -53,7 +53,7 @@ const About = () => {
     // ]
   return (
     <section className="w-full xl:w-[90%] mx-auto">
-        <main className='w-[85%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
+        <main className='w-[80%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
             <h1 className='text-center'>About</h1>
             <section className='py-[4rem] flex flex-col gap-8 lg:gap-10 md:flex-row items-center '>
                 <motion.aside className='relative flex justify-center items-center'
@@ -64,7 +64,7 @@ const About = () => {
                     <div className='absolute border-rotate w-[19rem] h-[19rem]'></div>
                     <div className='w-[20rem] h-[20rem] mx-auto rounded-full overflow-hidden border-[1.5rem]  border-bgColor shadow  flex justify-center items-center'>
                         <div className='rounded-full inset-shadow h-full w-full'>
-                            <Image src={MyImg} alt='Victoria' className=' inset-0 object-cover w-full h-full'/>
+                            <Image src={MyImg} alt='Victoria' className=' object-cover w-full h-full'/>
                         </div>
                     </div>
                 </motion.aside>

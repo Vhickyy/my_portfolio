@@ -1,8 +1,11 @@
 import About from '@/components/About';
+import Contact from '@/components/Contact';
 import Experience from '@/components/Experience';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Project from '@/components/Project';
+import Skills from '@/components/Skills';
 import Image from 'next/image'
 
 export default function Home() {
@@ -14,9 +17,12 @@ export default function Home() {
       <Hero/>
       {/* <main className="max-w-[1440px] w-[90%] xl:w-[85%] mx-auto"> */}
         <About />
+        <Skills/>
         <Experience/>
         <Project/>
+        <Contact/>
       {/* </main> */}
+      <Footer/>
     </>
   )
 }
