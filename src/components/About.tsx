@@ -54,7 +54,7 @@ const About = () => {
   return (
     <section className="w-full xl:w-[90%] mx-auto">
         <main className='w-[80%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
-            <h1 className='text-center'>About</h1>
+            <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> About Me </>"}</h1>
             <section className='py-[4rem] flex flex-col gap-8 lg:gap-10 md:flex-row items-center '>
                 <motion.aside className='relative flex justify-center items-center'
                     initial={{x: "-100px",opacity:0.1}}
@@ -71,7 +71,7 @@ const About = () => {
                 <aside className='grid gap-2'>
                     <p>My name is Victoria Okonnah and I'm a full-Stack developer. I'm skilled at building accessibile, responsive and scalable web applications using React.js on the frontend and Node.js on the backend. </p>
                     <p>I have good communication skill, I love to code.</p>
-                    <div className='flex flex-wrap gap-4 mt-2'>
+                    {/* <div className='flex flex-wrap gap-4 mt-2'>
                     {skills.map((skill,index)=>{
                         return (
                             <button className='shadow py-2 min-w-[2.9rem] grid place-items-center' key={index}>
@@ -79,7 +79,7 @@ const About = () => {
                             </button>
                             )
                         })}
-                    </div>
+                    </div> */}
                 </aside>
             </section>
         </main>

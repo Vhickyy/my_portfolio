@@ -33,9 +33,6 @@ const Header = () => {
         return () => window.removeEventListener("scroll",scroll)
     },[position])
 
-    const toggleMobileMenu = () => {
-        setMobileMenu(pre=>!pre)
-    }
     // const links = navLinks.map((link,index)=>{
     //     return (
     //         <button className='border border-gray-500 p-2 rounded-md' key={index}>
@@ -64,7 +61,7 @@ const Header = () => {
             {/* third flex item */}
             <section className='flex gap-4'>
                 {/* mobile nav */}
-                <aside className={` shadow bg-bgColor  grid items-center rounded-md relative md:hidden`} onClick={toggleMobileMenu}>
+                <aside className={` shadow bg-bgColor  grid items-center rounded-md relative md:hidden`} onClick={()=>setMobileMenu(pre=>!pre)}>
                     <button className='border border-gray-500 p-2 rounded-md '>
                         <div className='h-6 w-6 bg-red-400 rounded-full'></div>
                     </button>

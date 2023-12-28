@@ -5,8 +5,8 @@ const Experience = () => {
     <section className="w-full xl:w-[90%] mx-auto">
         <main className='py-[4rem] w-[85%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
             <div>
-                <h2 className='text-center'>Experience</h2>
-                <div className='grid gap-6 py-[4rem] sm:grid-cols-2'> 
+            <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Experience </>"}</h1>
+                <div className='grid gap-6 lg:gap-10 py-[4rem] sm:grid-cols-2'> 
                     <div className='shadow px-4 py-2 border border-textColor rounded-md'>
                         <p>2023-01 - Present</p>
                         <p>Tech Room</p>
