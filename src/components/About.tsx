@@ -55,7 +55,7 @@ const About = () => {
     <section className="w-full xl:w-[90%] mx-auto">
         <main className='w-[80%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
             <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> About Me </>"}</h1>
-            <section className='py-[4rem] flex flex-col gap-8 lg:gap-10 md:flex-row items-center '>
+            <section className='pt-[4rem] pb-[10rem] flex flex-col gap-8 lg:gap-10 md:flex-row items-center '>
                 <motion.aside className='relative flex justify-center items-center'
                     initial={{x: "-100px",opacity:0.1}}
                     whileInView={{x: "0px", opacity:1}}

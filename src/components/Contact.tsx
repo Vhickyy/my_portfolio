@@ -3,10 +3,10 @@ import { FaGithub, FaLinkedin, FaLocationArrow, FaSearchLocation } from 'react-i
 
 const Contact = () => {
   return (
-    <section className="w-full mx-auto">
-        <main className='w-[85%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
+    <section className="w-full xl:w-[90%] mx-auto">
+        <main className='w-[80%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
         <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Contact Me </>"}</h1>
-        <div className='py-[4rem]'>     
+        <div className='pt-[4rem] pb-[10rem]'>     
             <div >
                 <p>Are you in need of a developer?</p>
                 <p>Do you want to collaborate on a project?</p>
