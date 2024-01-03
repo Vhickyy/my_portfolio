@@ -1,13 +1,18 @@
+"use client"
+import { usePortfolioContext } from '@/context/PortfolioContext'
+import { colors } from '@/data/data'
 import React from 'react'
 
 const Experience = () => {
+    const {color} = usePortfolioContext()
+    const borderStyle = {borderTop: `2px solid ${colors[color].gradient}`, borderLeft: `2px solid ${colors[color].gradient}`, borderBottom:`2px solid ${colors[color].color}`,borderRight:`2px solid ${colors[color].color}` }
   return (
     <section className="w-full xl:w-[90%] mx-auto">
         <main className='py-[4rem] w-[80%] sm:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
             <div>
                 <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Experience </>"}</h1>
                 <div className='grid gap-6 lg:gap-10 pt-[4rem] pb-[10rem] sm:grid-cols-2'> 
-                    <div className='shadow px-4 py-2 border border-textColor rounded-md'>
+                    <div className='shadow px-4 py-2 rounded-md' style={borderStyle}>
                         <p>2023-01 - Present</p>
                         <p>Tech Room</p>
                     </div>

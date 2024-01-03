@@ -13,20 +13,20 @@ background: #1d1a39;
 box-shadow:  15px 15px 30px #141228,
              -15px -15px 30px #26224a; */
 :root {
-  /* --backgroundColor: #d3d2da;
+  --backgroundColor: #d3d2da;
   --shadow: 3px 3px 7px #9e9ea4,
   -3px -3px 5px #ffffff;
-  --textColor: #1d1a39;  */
-  --textColor: #d3d2da; 
+  --textColor: #1d1a39; 
+  /* --textColor: #d3d2da; 
   --backgroundColor: #0b0925;
-  --shadow: none;
+  --shadow: none; */
 }
 
 .dark{
-  --backgroundColor: #1d1a39;
-  /* --shadow: 3px 3px 7px #16142b,
-  -3px -3px 5px #242147; */
-  --shadow: none;
+  --backgroundColor: #0b0925;
+  --shadow: 3px 3px 7px #16142b,
+  -3px -3px 5px #242147;
+  /* --shadow: none; */
   --textColor: #d3d2da; 
 }
 
@@ -34,16 +34,12 @@ box-shadow:  15px 15px 30px #141228,
   box-shadow: var(--shadow);
 }
 .border-rotate{
-  /* height: 5rem;
-  width: 5rem; */
-  /* border: .3rem solid blueviolet; */
   border-radius: 50%;
-  padding: 2rem;
-  border-top: .3rem solid pink;
-  border-inline: .3rem solid transparent;
-  border-bottom: .3rem solid #ffc0cb;
-  /* background-color: pink; */
-  z-index: 1;
+  /* transform:  rotate(0); */
+  /* padding: 4rem; */
+  /* z-index: 1; */
+  animation: borderRotate 7s linear infinite ;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .inset-shadow{
@@ -58,4 +54,13 @@ box-shadow:  15px 15px 30px #141228,
   top: 0; */
   /* background-color: brown; */
   top: -500px;
+}
+
+@keyframes borderRotate {
+  100%{
+    transform:rotate(1turn);;
+  }
+  /* 100%{
+    transform: rotate(0)
+  } */
 }

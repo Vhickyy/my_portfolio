@@ -1,8 +1,14 @@
+"use client"
+import { usePortfolioContext } from '@/context/PortfolioContext'
+import { colors } from '@/data/data'
 import React from 'react'
 
 const Hero = () => {
+    const {color} = usePortfolioContext();
   return (
-    <section className='flex flex-col justify-center items-center gap-[3rem]  py-[7rem]'>
+    <section className='relative flex flex-col justify-center items-center gap-[3rem]  py-[7rem]'>
+        <div className='absolute top-[4rem] right-0 h-[10rem] w-[40%]  z-[-3] blur-[10rem] rounded-full opacity-50' style={{backgroundColor: colors[color].color}}></div>
+        <div className='absolute top-0 left-0 h-[10rem] w-[40%]  z-[-3] blur-[10rem] rounded-full opacity-50' style={{backgroundColor: colors[color].gradient}}></div>
         <h1 className='text-center'>Hello 👋</h1>
         <div className='tracking-normal w-[70%] max-w-[31rem] mx-auto'>
             <p>{`try {`}</p>
