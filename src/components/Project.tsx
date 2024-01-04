@@ -14,7 +14,7 @@ const Project = () => {
             <div className='grid gap-6 lg:gap-8 pt-[4rem] pb-[10rem] sm:grid-cols-2 xl:grid-cols-3' >
                 {[1,2,3].map((work,index)=>{
                     return(
-                        <div className='shadow py-4 px-4 rounded-lg border border-textColor' key={index} style={borderStyle}>
+                        <div className='shadow py-4 px-4 rounded-lg r' key={index} style={{}}>
                             <div className='mb-2 flex gap-1'>
                                 <div className='w-4 h-4 rounded-full bg-red-400'></div>
                                 <div className='w-4 h-4 rounded-full bg-red-400'></div>
