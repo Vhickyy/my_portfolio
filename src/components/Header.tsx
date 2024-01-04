@@ -19,6 +19,7 @@ const Header = () => {
             }else{
                 headerRef.current.classList.remove("sticky-cl");
                 headerRef.current.style.boxShadow = "2px 2px 6px gray";
+                // headerRef.current.style.borderBottom = "2px solid red";
             }
             if(position <= 20){
                 headerRef.current.style.boxShadow = "none";
@@ -31,7 +32,7 @@ const Header = () => {
     useEffect(()=>{
         window.addEventListener("scroll",scroll)
         return () => window.removeEventListener("scroll",scroll)
-    },[position])
+    },[position,theme])
 
     // const links = navLinks.map((link,index)=>{
     //     return (

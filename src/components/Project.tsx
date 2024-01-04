@@ -9,9 +9,9 @@ const Project = () => {
     const borderStyle = {borderTop: `2px solid ${colors[color].gradient}`, borderLeft: `2px solid ${colors[color].gradient}`, borderBottom:`2px solid ${colors[color].color}`,borderRight:`2px solid ${colors[color].color}` }
   return (
     <section className="w-full xl:w-[90%] mx-auto">
-        <main className='pt-[1rem] pb-[2rem] w-[80%] sm:w-[90%] lg:w-[80%] xl:w-[75%]  mx-auto'>
+        <main className='pt-[1rem] pb-[2rem] w-[80%] sm:w-[90%] lg:w-[80%] xl:w-[95%] mx-auto'>
         <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Projects </>"}</h1>
-            <div className='grid gap-6 lg:gap-10 pt-[4rem] pb-[10rem] sm:grid-cols-2' >
+            <div className='grid gap-6 lg:gap-8 pt-[4rem] pb-[10rem] sm:grid-cols-2 xl:grid-cols-3' >
                 {[1,2,3].map((work,index)=>{
                     return(
                         <div className='shadow py-4 px-4 rounded-lg border border-textColor' key={index} style={borderStyle}>
