@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Work from "@/images/remix.png"
+import Calculator from "@/images/calculator.jpeg"
 import { usePortfolioContext } from '@/context/PortfolioContext';
 import { colors } from '@/data/data';
 const Project = () => {
@@ -29,7 +30,7 @@ const Project = () => {
                                 <div className='w-4 h-4 rounded-full bg-red-400'></div>
                             </div>
                             <div className='cursor-pointer relative group'>
-                                <Image src={Work} alt='work' className=' w-full h-[10rem] rounded-md '/>
+                                <Image src={Calculator} alt='work' className=' w-full h-[10rem] rounded-md '/>
                                 <div className='absolute bottom-0 left-0 right-0 bg-[#ffc0cb99] group-hover:top-0'></div>
                             </div>
                             <div className='mt-4 flex gap-4'>

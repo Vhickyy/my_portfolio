@@ -15,10 +15,10 @@ const Skills = () => {
                     <div className='h-4 w-8 shadow rounded-md'></div>
                 </div>
             </section>
-            <div className='flex flex-wrap justify-center items-center gap-4 pt-[4rem] pb-[10rem]'>
+            <div className='flex flex-wrap justify-center items-center gap-6 pt-[4rem] pb-[10rem]'>
                 {skills.map((skill,index)=>{
                     return (
-                        <button className='shadow py-2 min-w-[2.9rem] grid place-items-center' key={index}>
+                        <button className='shadow py-4 min-w-[5rem] md:min-w-[8rem] grid place-items-center rounded-md' key={index}>
                             <FaHtml5 className="text-yellow-500 h-[2rem] w-[2rem]"/>
                         </button>
                     )
