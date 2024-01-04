@@ -9,7 +9,16 @@ const Contact = () => {
   return (
     <section className="w-full xl:w-[90%] mx-auto">
         <main className='w-[80%] md:w-[90%] lg:w-[80%] xl:w-[95%] mx-auto'>
-        <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Contact Me </>"}</h1>
+        {/* <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Contact Me </>"}</h1> */}
+            <section className='grid place-items-center gap-5'>
+                <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Contact Me </>"}</h1>
+                <div className='flex gap-4'>
+                    
+                    <div className='h-4 w-8 shadow rounded-md'></div>
+                    <div className='h-4 w-8 shadow grid place-items-center rounded-md'><div className='w-1/2 h-1 bg-red-400'></div></div>
+                    <div className='h-4 w-8 shadow rounded-md'></div>
+                </div>
+            </section>
         <div className='pt-[4rem] pb-[10rem]'>     
             <div >
                 <p>Are you in need of a developer?</p>
@@ -23,7 +32,7 @@ const Contact = () => {
                 <FaGithub className="w-6 h-6"/>
                 <FaLinkedin className="w-6 h-6"/>
             </div> */}
-            <section className='grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+            <section className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                 <div className='bg-bgColor shadow p-8 grid place-items-center gap-3 rounded-md'>
                     <FaGithub className="w-10 h-10" style={{color: `${colors[color].color}`}}/>
                     <h3 className='text-2xl font-bold text-[${colors[color].color}]' style={{color: `${colors[color].color}`}} >Github</h3>

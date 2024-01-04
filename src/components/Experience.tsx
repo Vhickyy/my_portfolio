@@ -10,7 +10,16 @@ const Experience = () => {
     <section className="w-full xl:w-[90%] mx-auto">
         <main className='py-[4rem] w-[80%] sm:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
             <div>
-                <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Experience </>"}</h1>
+                {/* <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Experience </>"}</h1> */}
+                <section className='grid place-items-center gap-5'>
+                    <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> Experience </>"}</h1>
+                    <div className='flex gap-4'>
+                        
+                        <div className='h-4 w-8 shadow rounded-md'></div>
+                        <div className='h-4 w-8 shadow rounded-md'></div>
+                        <div className='h-4 w-8 shadow grid place-items-center rounded-md'><div className='w-1/2 h-1 bg-red-400'></div></div>
+                    </div>
+                </section>
                 <div className='grid gap-6 lg:gap-10 pt-[4rem] pb-[10rem] sm:grid-cols-2'> 
                     <div className='shadow px-4 py-2 rounded-md' style={borderStyle}>
                         <p>2023-01 - Present</p>

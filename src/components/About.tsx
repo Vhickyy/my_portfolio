@@ -14,7 +14,14 @@ const About = () => {
   return (
     <section className="w-full xl:w-[90%] mx-auto">
         <main className='w-[80%] md:w-[90%] lg:w-[80%] xl:w-[75%] mx-auto'>
-            <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> About Me </>"}</h1>
+            <section className='grid place-items-center gap-5'>
+                <h1 className='text-center text-2xl md:text-4xl font-bold'>{"<> About Me </>"}</h1>
+                <div className='flex gap-4'>
+                    <div className='h-4 w-8 shadow grid place-items-center rounded-md'><div className='w-1/2 h-1 bg-red-400'></div></div>
+                    <div className='h-4 w-8 shadow rounded-md'></div>
+                    <div className='h-4 w-8 shadow rounded-md'></div>
+                </div>
+            </section>
             <section className='pt-[4rem] pb-[10rem] flex flex-col gap-8 lg:gap-10 md:flex-row items-center '>
                 <motion.aside className='relative flex justify-center items-center'
                     initial={{x: "-100px",opacity:0.1}}
