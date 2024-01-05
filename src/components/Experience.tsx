@@ -23,9 +23,13 @@ const Experience = () => {
                 <div className='grid gap-6 lg:gap-10 pt-[4rem] pb-[10rem] sm:grid-cols-2'> 
                     <div className='shadow px-4 py-2 rounded-md' style={borderStyle}>
                         <p>2023-01 - Present</p>
+                        <p>Tech Assembly</p>
+                    </div>
+                    <div className='shadow px-4 py-2 rounded-md' style={borderStyle}>
+                        <p>2023-01 - Present</p>
                         <p>Tech Room</p>
                     </div>
-                    <div className='shadow px-6 py-4 border border-textColor rounded-md'>
+                    <div className='shadow px-6 py-4 rounded-md' style={borderStyle}>
                         <p>2023-01 - Present</p>
                         <p>Safe-Note</p>
                         <p>A web application that offers a safe way to keep notes and also real time collaboration on any writing project using socket.io.</p>
