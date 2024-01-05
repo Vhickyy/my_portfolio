@@ -6,7 +6,6 @@ import {BiLogoTypescript } from "react-icons/bi";
 export const colors = [
     {
         color: "#c34a3e",
-        // color: "#c33e40",
         gradient: "#ff806e"
     },
     {
@@ -20,8 +19,9 @@ export const colors = [
         gradient: "#a99e06"
     },
     {
-        color: "#ED6258",
-        gradient: "#ED7C58"
+        // color: "#ED6258",
+        color: "#a8072d",
+        gradient: "#ed587b"
     },
     {
         color: "orange",
