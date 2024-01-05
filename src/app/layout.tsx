@@ -3,7 +3,8 @@ import { Inter,Montserrat } from 'next/font/google'
 import './globals.css'
 import { PortfolioContextProvider } from '@/context/PortfolioContext'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <PortfolioContextProvider>
-        <body className={`${inter.className} bg-bgColor max-w-[1400px] mx-auto text-textColor`}>{children}</body>
+        <body className={`${montserrat.className} bg-bgColor max-w-[1400px] mx-auto text-textColor`}>{children}</body>
       </PortfolioContextProvider>
     </html>
   )
