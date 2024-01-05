@@ -4,7 +4,6 @@ import './globals.css'
 import { PortfolioContextProvider } from '@/context/PortfolioContext'
 
 const inter = Inter({ subsets: ['latin'] })
-export const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
