@@ -13,10 +13,10 @@ export const colors = [
         gradient: "#81942B"
     },
     {
-        // color: "#a99e06",
-        // color: "#8b8202",
-        color: "#A87607",
-        gradient: "#a99e06"
+        // color: "#A87607",
+        // gradient: "#a99e06"
+        color: "#8d8801",
+        gradient: "#c9be26"
     },
     {
         color: "#a8072d",
