@@ -37,7 +37,8 @@ const About = () => {
                 </motion.aside>
                 <motion.aside className='grid gap-2'>
                     <p>My name is Victoria Okonnah and I'm a full-Stack developer. I'm skilled at building accessibile, responsive and scalable web applications using React.js on the frontend and Node.js on the backend. </p>
-                    <p>I have good communication skill, I love to code.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis.</p>
+                    {/* <p>I have good communication skill, I love to code.</p> */}
                     {/* <div className='flex flex-wrap gap-4 mt-2'>
                     {skills.map((skill,index)=>{
                         return (

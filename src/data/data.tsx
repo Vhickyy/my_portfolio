@@ -1,6 +1,9 @@
 import { FaCss3, FaHome, FaHtml5, FaNodeJs } from 'react-icons/fa';
 import {IoLogoJavascript } from "react-icons/io";
 import {BiLogoTypescript } from "react-icons/bi";
+import Calculator from "@/images/calculator.jpeg"
+import Notes from "@/images/notes.png"
+import Kel from "@/images/kel.png"
 
 // colors
 export const colors = [
@@ -103,5 +106,32 @@ export const skills = [
     {
         icon: <FaNodeJs className="text-green-900 h-[2rem] w-[2rem]"/>,
         name: "CSS3"
+    },
+]
+
+export const projects = [
+    {
+        title:"Calculator",
+        description: "A basic calculator that shows history of calcutions made",
+        techstack: "React Typescript",
+        img: Calculator
+    },
+    {
+        title:"Calculator",
+        description: "A basic calculator that shows history of calcutions made",
+        techstack: "React Typescript",
+        img: Notes
+    },
+    {
+        title:"Calculator",
+        description: "A basic calculator that shows history of calcutions made",
+        techstack: "React Typescript",
+        img: Kel
+    },
+    {
+        title:"Calculator",
+        description: "A basic calculator that shows history of calcutions made",
+        techstack: "React Typescript",
+        img: Calculator
     },
 ]

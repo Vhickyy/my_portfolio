@@ -11,13 +11,14 @@ const Hero = () => {
         <div className='absolute top-0 left-0 h-[10rem] w-[40%]  z-[-3] blur-[10rem] rounded-full opacity-50' style={{backgroundColor: colors[color].gradient}}></div>
         <h1 className='text-center'>Hello 👋</h1>
         <div className='tracking-normal w-[70%] max-w-[31rem] mx-auto'>
-            <p>{`try {`}</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati reprehenderit nisi nobis molestiae doloribus aut aperiam, dignissimos, illo sit veritatis vero quidem dolor doloremque optio! Est quo architecto excepturi maxime.</p>
+            {/* <p>{`try {`}</p>
             <p className='pl-6'>console.log("I write code")</p>
             <p>{`} catch() {`}</p>
             <p className='pl-6'>console.log("I debug")</p>
             <p>{`} finally {`}</p>
             <p className='pl-6'>console.log("I build responsive and scalable web application")</p>
-            <p>{`}`}</p>
+            <p>{`}`}</p> */}
         </div>
         {/* <p className='w-full max-w-[35rem] mx-auto'>I write code, fix bugs</p> */}
         <div className='flex justify-center items-center gap-4'>
