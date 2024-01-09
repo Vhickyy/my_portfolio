@@ -2,7 +2,8 @@
 import { usePortfolioContext } from '@/context/PortfolioContext'
 import { colors } from '@/data/data'
 import React from 'react'
-import { FaGithub, FaLinkedin, FaLocationArrow, FaSearchLocation } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaLocationArrow, FaSearchLocation, FaTwitter } from 'react-icons/fa'
+import {MdEmail} from "react-icons/md"
 
 const Contact = () => {
     const {color} = usePortfolioContext()
@@ -39,17 +40,17 @@ const Contact = () => {
                     <p>Victoria Okonnah</p>
                 </div>
                 <div className='bg-bgColor shadow p-8 grid place-items-center gap-3 rounded-md'>
-                    <FaGithub className="w-10 h-10" style={{color: `${colors[color].color}`}}/>
+                    <FaTwitter className="w-10 h-10" style={{color: `${colors[color].color}`}}/>
                     <h3 className='text-2xl font-bold text-[${colors[color].color}]' style={{color: `${colors[color].color}`}} >Github</h3>
                     <p>Victoria Okonnah</p>
                 </div>
                 <div className='bg-bgColor shadow p-8 grid place-items-center gap-3 rounded-md'>
-                    <FaGithub className="w-10 h-10" style={{color: `${colors[color].color}`}}/>
+                    <FaLinkedin className="w-10 h-10" style={{color: `${colors[color].color}`}}/>
                     <h3 className='text-2xl font-bold text-[${colors[color].color}]' style={{color: `${colors[color].color}`}} >Github</h3>
                     <p>Victoria Okonnah</p>
                 </div>
                 <div className='bg-bgColor shadow p-8 grid place-items-center gap-3 rounded-md'>
-                    <FaGithub className="w-10 h-10" style={{color: `${colors[color].color}`}}/>
+                    <MdEmail className="w-10 h-10" style={{color: `${colors[color].color}`}}/>
                     <h3 className='text-2xl font-bold text-[${colors[color].color}]' style={{color: `${colors[color].color}`}} >Github</h3>
                     <p>Victoria Okonnah</p>
                 </div>
